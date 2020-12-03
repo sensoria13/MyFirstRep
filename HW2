@@ -67,10 +67,10 @@ let discountedAmount = 0;
  let i = 0;
  
  if (( answerOne>= 1) || (answerOne !== undefined) || (answerOne !== null) || 
- 	   ( answerTwo>= 1) || (answerTwo !== undefined) || (answerTwo !== null) ||
- 	   ( answerThree>= 1) || (answerThree !== undefined) || (answerThree !== null) ||
- 	   ( answerFour>= 1) || (answerFour !== undefined) || (answerFour !== null) ||
- 	   ( answerFive>= 1) || (answerFive !== undefined) || (answerFive !== null))
+     ( answerTwo>= 1) || (answerTwo !== undefined) || (answerTwo !== null) ||
+     ( answerThree>= 1) || (answerThree !== undefined) || (answerThree !== null) ||
+     ( answerFour>= 1) || (answerFour !== undefined) || (answerFour !== null) ||
+     ( answerFive>= 1) || (answerFive !== undefined) || (answerFive !== null))
  
       {
         if (answerOne === 20) { i++};
