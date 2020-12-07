@@ -43,6 +43,23 @@ console.log(arrayMax);
 
 4. Попросити юзера ввести 8 чисел і скільки він ввів додатніх, відємних та нулів. Вивести статистику на екран. Також достатньо тільки 1 змінної для отримання даних від юзера. 
 
+let value = prompt('Введіть вісім чисел через кому.');
+let array = value.split(',',8);
+let positive = 0;
+let negative = 0;
+let zero = 0;
+let error = 0;
+//let OneMoreArray[];
+
+for (let i=0; i<=7; i++) {
+    if (array[i] > 0) {positive=positive+1} else 
+    if (array[i] < 0) {negative=negative+1} else 
+    if (array[i] == 0) {zero=zero+1}  else {error=error+1}
+}
+
+
+        
+console.log('Значень більше від нуля - ' +positive+ ', Менше від нуля - ' +negative+ ', Нулів - ' +zero+ ', Помилок введеня - ' +error);
 
 
 5. Надрукуйте табличку множення для числа  8 від 1 до 9. 8 х 1 = 8
