@@ -1,0 +1,37 @@
+// 1. Write a JavaScript program which computes, the average marks of the following students Then, this average is used to determine the corresponding grade.
+
+
+// 2. Write a JavaScript program to sum the multiples of 3 or 5 under 1000.
+
+let multOf3 = 0;
+let multOf5 = 0;
+
+for (let i = 0; i < 1000; i++)  {
+  if (i % 3 === 0) {multOf3 += i;} else {
+  if (i % 5 === 0) {multOf5 += i;}
+  }
+}
+
+console.log(multOf3+multOf5);
+
+
+// 3. Write a JavaScript program to construct the following pattern, using a nested for loop.
+
+* 
+
+* * 
+
+* * * 
+
+* * * * 
+
+* * * * *
+
+let str1 = '*';
+let str2 = '*';
+let str3 = " ";
+
+for (let i = 0; i < 6; i++)  {
+  console.log(str1 + '\n' + str3); // Якщо потрібна ялинка без пробілів, то з даного рядка можна вилучити шматок коду + str3
+  str1+=str2
+}
