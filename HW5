@@ -1,0 +1,77 @@
+// 1. Напишіть функцію, що повертає куб числа.
+
+let unknown = prompt('Введіть число, яке хочете піднести до кубу.','');
+
+function toCube() {
+  return Math.pow(unknown, 3);
+}
+
+console.log(toCube());
+
+// 2. Напишіть функцію, що додає перше число до другого і ділить результат на третє число.
+
+let value = prompt('Введіть через кому три числа.');
+let array = value.split(',',3);
+let firstVariable = Number(value[0]);
+let secondVariable = Number(value[1]);
+let thirdVariable = Number(value[2]);
+ 
+function mathOpp() {
+return (value[0] + value[1]) / value[2]
+}
+ 
+console.log(mathOpp());
+
+// 3. Напишіть функцію, що приймає число від 1 до 7 і повертає відповідну назву дня (українською).
+
+function getRandomInt(min, max) {
+  return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+
+let weekDay = getRandomInt(1, 7);
+	if (weekDay === 1) {console.log('Сьогодні понеділок ' + weekDay + ' день тижня.')} else 
+	if (weekDay === 2) {console.log('Сьогодні вівторок ' + weekDay + ' день тижня.')} else 
+	if (weekDay === 3) {console.log('Сьогодні середа ' + weekDay + ' день тижня.')} else 
+	if (weekDay === 4) {console.log('Сьогодні четвер ' + weekDay + ' день тижня.')} else 
+	if (weekDay === 5) {console.log('Сьогодні п*ятниця ' + weekDay + ' день тижня.')} else 
+	if (weekDay === 6) {console.log('Сьогодні субота ' + weekDay + ' день тижня.')} else 
+	if (weekDay === 7) {console.log('Сьогодні неділя ' + weekDay + ' день тижня.')} else 
+console.log('Такого дня тижня не існує (: ');
+
+// 4. Реалізуйте функцію знаходження факторіала
+
+let number = prompt('Введіть число факторіал якого потрібно знайти');
+console.log(factorialOf(number));
+
+function factorialOf (number) {
+  return number * (number - 1);
+}
+
+// 5. Напишіть функцію яка отримує години хвилини та секунди і повертає це число в секундах.
+
+const toHour = 3600;
+const toMinute = 60;
+let number = prompt('Введіть через кому число годин, хвилин та секунд, які потрібно перевестив секунди');
+let array = number.split(',',3);
+
+console.log(dataTransfer(array));
+
+function dataTransfer(array) {
+return array[0] * toHour + array[1] * toMinute + Number(array[2]);;
+}
+
+// 6.Написати функцію , яка приймає секунди, і перетворює їх у години хвилини та секунди у форматі «гг:хх:сс». 
+//   Якщо кількість годин більша за 23.59.59 - вивести повідомлення "Більше одного дня". 
+
+const toHours = 60;
+const toMinutes = 60;
+
+let secondsOf = prompt('Введіть кількість секунд, яку потрібно конвертувати.');
+let hours = Math.floor(secondsOf / toMinutes / toHours);
+let minutes = Math.floor(secondsOf / toMinutes) - (hours * toHours);
+let seconds = secondsOf % 60;
+
+if (hours > 23) {console.log('Більше одного дня')} else  
+{ let formatted = hours + ':' + minutes + ':' + seconds;
+  console.log(formatted);
+}
